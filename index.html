@@ -180,12 +180,12 @@ action models to ground such knowledge into the environment and parameterize ac
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">OWG: Open-World Grasper</h2>
+      <h2 class="title is-3">Open-World Grasper (OWG)</h2>
       <div class="columns is-centered has-text-centered">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/fdsfad.drawio.pdf" alt="alt text"/>
-        <h2 class="subtitle has-text-justified">
+        <img src="static/images/fdsfad.drawio.png" alt="alt text"/>
+          <h2 class="subtitle has-text-justified" style="font-size: 0.85rem; margin-bottom: 20px;">
          Given a user instruction and an observation, OWG first invokes a segmentation model to recover pixel-level masks, and overlays them with numeric IDs as visual markers in a new image. Then the VLM subsequently activates three stages: (i) grounding the target object from the language expression in the marked image, (ii) planning on whether it should grasp the target or remove a surrounding object, and (iii) invoking a grasp synthesis model to generate grasps and ranking them according to the object's shape and neighbouring information. The best grasp pose (highlighted here in pink - not part of the prompt) is executed and the observation is updated for a new run, until the target object is grasped.human user provides an instruction and a language parser synthesizes an executable program (bottom left), built out of a primitives library (bottom middle). A program executor utilises a set of concept grounding modules to ground words to different objects (center) and executes the predicted program step-by-step (top right), in order to identify the queried object and instruct the robot to grasp it (bottom right).
         </h2>
       </div>
@@ -203,12 +203,12 @@ action models to ground such knowledge into the environment and parameterize ac
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">OWG: Open-World Grasper</h2>
+      <h2 class="title is-3">Zero-Shot Mark-based Visual Prompting</h2>
       <div class="columns is-centered has-text-centered">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/ShowAll.drawio.pdf" alt="alt text"/>
-        <h2 class="subtitle has-text-justified">
+        <img src="static/images/ShowAll.drawio.png" alt="alt text"/>
+          <h2 class="subtitle has-text-justified" style="font-size: 0.85rem; margin-bottom: 20px;">
         Example GPT-4v responses (from left to right): a) Open-ended referring segmentation, i.e., grounding, b) Grounded grasp planning, and c) Grasp ranking via contact reasoning. We omit parts of the prompt and response for brievity.
         </h2>
       </div>
