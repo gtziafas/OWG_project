@@ -218,69 +218,64 @@ action models to ground such knowledge into the environment and parameterize ac
     </div>
   </div>
 </section>
-<!-- End components response image -->
+<!-- End components response image --
 
 
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- Grounding exp table -->
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video</h2>
+      <h2 class="title is-3">Robustness to Open-Ended Language</h2>
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/tab1.png" alt="alt text" style="margin-top: 20px;" />
+          <h2 class="subtitle has-text-justified" style="font-size: 1rem; margin-bottom: 10px;">
+In order to evaluate the open-ended potential of OWG for grounding, we curate the OCID dataset for referring expressions of different types: a) <strong>Name</strong>, which contains an open-vocabulary description of an object (e.g. <i>Choco Krispies</i>), b) <strong>Attribute</strong>, which described a specific object attribute such as color, texture, shape, material or state (e.g. <i>opened cereal box</i>), c) <strong>spatial / visual / semantic relations</strong>, which contain multi-object references that describe relations between objects (e.g. <i>cereal behind bowl</i>),  d) <strong>affordances</strong>, which contain a verb indicating the user's intent, requiring contextual understanding to resolve (i.e. <i>I want to wipe my hands</i>), and e) <strong>multi-hop</strong>, which contain multiple rounds of reasoning step to reach a final answer (e.g. <i>second largest cereal box from the left of the blue bowl</i>).
+We find that GPT-4v, when prompted with explicit marker-based visual prompts can outperform previous CLIP-based methods, as well as other visually-grounded open-source VLMs.         
+	  </h2>
+      </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End grounding exp table -->
 
 
-<!-- Video carousel -->
+<!-- Grounding image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/RSSExampleResponses_1.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+            Grounding open-vocabulary object names and attributes.
+        </h2>
       </div>
-    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/RSSExampleResponses_2.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Grounding complex relations between objects.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/RSSExampleResponses_3.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Grounding user affordances with contextual semantics.
+       </h2>
+     </div>
   </div>
+</div>
+</div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
+<!-- End grounding image carousel -->
 
 
 <!--BibTex citation -->
@@ -291,8 +286,7 @@ action models to ground such knowledge into the environment and parameterize ac
       title={Towards Open-World Grasping with Large Vision-Language Models}, 
       author={Georgios Tziafas and Hamidreza Kasaei},
       year={2024},
-      archivePrefix={8th Conference on Robot Learning (CoRL 2024)},
-      url={https://arxiv.org/abs/2406.18722}, 
+      journal={8th Conference on Robot Learning (CoRL 2024)},
 }</code></pre>
     </div>
 </section>
