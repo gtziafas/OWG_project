@@ -175,45 +175,50 @@ action models to ground such knowledge into the environment and parameterize ac
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+<!-- Method image -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <!-- Paper video. -->
+      <h2 class="title is-3">OWG: Open-World Grasper</h2>
+      <div class="columns is-centered has-text-centered">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
+        <img src="static/images/fdsfad.drawio.pdf" alt="alt text"/>
+        <h2 class="subtitle has-text-justified">
+         Given a user instruction and an observation, OWG first invokes a segmentation model to recover pixel-level masks, and overlays them with numeric IDs as visual markers in a new image. Then the VLM subsequently activates three stages: (i) grounding the target object from the language expression in the marked image, (ii) planning on whether it should grasp the target or remove a surrounding object, and (iii) invoking a grasp synthesis model to generate grasps and ranking them according to the object's shape and neighbouring information. The best grasp pose (highlighted here in pink - not part of the prompt) is executed and the observation is updated for a new run, until the target object is grasped.human user provides an instruction and a language parser synthesizes an executable program (bottom left), built out of a primitives library (bottom middle). A program executor utilises a set of concept grounding modules to ground words to different objects (center) and executes the predicted program step-by-step (top right), in order to identify the queried object and instruct the robot to grasp it (bottom right).
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End method image -->
 
+
+<!-- Components response image -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">OWG: Open-World Grasper</h2>
+      <div class="columns is-centered has-text-centered">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/ShowAll.drawio.pdf" alt="alt text"/>
+        <h2 class="subtitle has-text-justified">
+        Example GPT-4v responses (from left to right): a) Open-ended referring segmentation, i.e., grounding, b) Grounded grasp planning, and c) Grasp ranking via contact reasoning. We omit parts of the prompt and response for brievity.
+        </h2>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End components response image -->
 
 
 
